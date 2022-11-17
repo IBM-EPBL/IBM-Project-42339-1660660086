@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+
+<body>
+    <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn"> 
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="{{url_for('about')}}">Home</a>
+            <a href="#">symptoms</a>
+            <a href="{{url_for('check')}}">Lets Check</a>
+          </div>
+        </div> 
+      </div>
+    <div>
+        <div style="max-width: 20%; align-self: start;" class="center">
+            <img src="typical-heartbeat_1709751_3881158-001-1-72ppi-8col.webp" alt="" style="width: 10cm; height: 10cm;">
+        </div>
+        <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Symptoms</h2>
+        <ul>
+            <li>
+                <p style="font-family: initial;"><b>In General, Arrhytmia symptoms are</b></p>
+                  <ul>
+                      <li>Shortness of breath</li>
+                      <li>A fluttering in the chest</li>
+                      <li>A slow heartbeat (bradycardia)</li>
+                      <li>A racing heartbeat (tachycardia)</li>
+                      <li>Chest pain</li>
+                  </ul>
+            </li>
+            <li>
+                <p style="font-family: initial;"> <b>May also include</b></p>
+                <ul>
+                    <li>Anxiety</li>
+                    <li>Fatigue</li>
+                    <li>Lightheadedness or dizziness</li>
+                    <li>Fainting (syncope) or near fainting</li>
+                    <li>Sweating</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+    
+</body>
+</html>

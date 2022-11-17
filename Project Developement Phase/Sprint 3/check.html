@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+
+<body>
+    <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn"> 
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="{{url_for('about')}}">Home</a>
+          <a href="{{url_for('symptoms')}}">symptoms</a>
+          <a href="#">Lets Check</a>
+        </div>
+      </div> 
+    </div>
+
+<center>
+    <h2 style="font-size: 40px;">
+        ECG Arrhythmia
+        <span style="color: #2f8be0; font-size: 3vw">Classification</span>
+    </h2>
+</center>
+
+<div>
+    <form id="upload" method="post" enctype="multipart/form-data" action="{{url_for('upload')}}">
+        <center> <label for="imageUpload" class="upload-label">
+                Choose...
+            </label>
+            <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg"><br>
+            <input class="btn3" id="btn-predict" style="padding: 8px 34px; width: 120px; margin-top: 30px; padding: 14px 20px 12px 20px; background-color: #007bff; border-radius: 45px; text-align: center; color: #fff; cursor: pointer;" value="Predict" type="submit" />
+        </center>
+    </form>
+
+    <center>
+        <div class="image-section" style="display:none;">
+            <div class="img-preview">
+                <div id="imagePreview">
+                </div>
+            </div>
+        </div>
+    </center>
+</div>
+
+<h3 style="color:Black" id="result">
+    <span> </span>
+</h3>
+
+</div>
+
+</div>
+
+</body>
+</html>    
