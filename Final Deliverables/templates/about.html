@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body{
+    background-color:Teal;
+    }
+  </style>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+
+<body>
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn"> 
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Home</a>
+      <a href="{{url_for('symptoms')}}">symptoms</a>
+      <a href="{{url_for('check')}}">Lets Check</a>
+    </div>
+  </div> 
+</div>
+
+<div>
+        <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+          Arrhythmia
+        </h1>
+</div>
+<div>
+  <div style="max-width: 20%; align-self: start;" class="right">
+  <img src="{{url_for('static', filename='beat.png')}}" alt="" style="width: 10cm; height: 8cm;">
+  </div>
+<div style="max-width: 70%; padding-left: 1cm;">
+  <p class="paragraph" >
+     A heart arrhythmia (uh-RITH-me-uh) is an irregular heartbeat. Heart rhythm problems (heart arrhythmias) occur when the electrical signals that coordinate the heart's beats don't work properly. The faulty signaling causes the heart to beat too fast (tachycardia), too slow (bradycardia) or irregularly. <br></p>
+     <p class="paragraph">Heart arrhythmias may feel like a fluttering or racing heart and may be harmless. However, some heart arrhythmias may cause bothersome — sometimes even life-threatening — signs and symptoms.However, sometimes it's normal for a person to have a fast or slow heart rate. For example, the heart rate may increase with exercise or slow down during sleep.<br></p>
+     <p class="paragraph"> Heart arrhythmia treatment may include medications, catheter procedures, implanted devices or surgery to control or eliminate fast, slow or irregular heartbeats. A heart-healthy lifestyle can help prevent heart damage that can trigger certain heart arrhythmias.<br></p>
+     <p class="paragraph">In this project, we build an effective electrocardiogram (ECG) arrhythmia classification method using a convolutional neural network (CNN), in which we classify ECG into seven categories, one being normal and the other six being different types of arrhythmia using deep two-dimensional CNN with grayscale ECG images. 
+      We are creating a web application where the user selects the image which is to be classified.The image is fed into the model that is trained and the cited class will be displayed on the webpage.</p>
+  </p>
+</div>
+</div>
+
+
+<div>
+  <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; ">Types</h1>
+  <p>
+    <ul>
+      <li >
+        <h4 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Atrial fibrillation (A-fib)</h4>
+        <p class="paragraph">
+          Chaotic heart signaling causes a rapid, uncoordinated heart rate. The condition may be temporary, but some A-fib episodes may not stop unless treated. A-fib is associated with serious complications such as stroke.
+        </p>
+      </li>
+      <li >
+        <h4 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Atrial flutter</h4>
+        <p class="paragraph">
+          Atrial flutter is similar to A-fib, but heartbeats are more organized. Atrial flutter is also linked to stroke.
+        </p>
+      </li>
+      <li >
+        <h4 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Supraventricular tachycardia</h4>
+        <p class="paragraph">
+          Supraventricular tachycardia is a broad term that includes arrhythmias that start above the lower heart chambers (ventricles). Supraventricular tachycardia causes episodes of a pounding heartbeat (palpitations) that begin and end abruptly.
+        </p>
+      </li>
+      <li >
+        <h4 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Ventricular fibrillation</h4>
+        <p class="paragraph">
+          This type of arrhythmia occurs when rapid, chaotic electrical signals cause the lower heart chambers (ventricles) to quiver instead of contacting in a coordinated way that pumps blood to the rest of the body. This serious problem can lead to death if a normal heart rhythm isn't restored within minutes. Most people who have ventricular fibrillation have an underlying heart disease or have experienced serious trauma.
+        </p>
+      </li>
+      <li >
+        <h4 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Ventricular tachycardia</h4>
+        <p class="paragraph">
+          This rapid, regular heart rate starts with faulty electrical signals in the lower heart chambers (ventricles). The rapid heart rate doesn't allow the ventricles to properly fill with blood. As a result, the heart can't pump enough blood to the body. Ventricular tachycardia may not cause serious problems in people with an otherwise healthy heart. In those with heart disease, ventricular tachycardia can be a medical emergency that requires immediate medical treatment.
+        </p>
+      </li>
+      <li><p>and more</p></li>
+    </ul>
+  </p>
+</div>
+</body>
+</html> 

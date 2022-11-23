@@ -1,0 +1,35 @@
+<html>
+    <head>
+  <style>
+    body{
+    background-color:teal;
+    }
+  </style>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+
+    </head>
+    <body>
+    <div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Home</a>
+      <a href="{{url_for('symptoms')}}">symptoms</a>
+      <a href="{{url_for('check')}}">Lets Check</a>
+    </div>
+  </div>
+</div>
+
+        <center><p style="font-size: xx-large;">It is classified as:
+{{result}}</p></center>
+        <h3><u>REFERENCE</u></h3>
+    <a href="https://www.apollo247.com/doctors/dr-a-k-bardhan-fba23237-e060-439d-a129-64d86251b8a2?utm_source=askapollo_web&utm_medium=web_redirection">Dr. A K Bardhan</a><br>
+    <a href="https://www.apollo247.com/doctors/dr-amit-mittal-941679bc-54ce-4f62-ba0b-fed650ea9b5c?utm_source=askapollo_web&utm_medium=web_redirection">Dr. Amit Mittal</a><br>
+    <a href="https://www.apollo247.com/doctors/dr-anuradha-sridhar-2649246f-3de1-461d-a7f1-08c47ecb1ef4?utm_source=askapollo_web&utm_medium=web_redirection">Dr. Anuradha Sridhar</a><br>
+    <a href="https://www.apollo247.com/doctors/3ac472d7-7fc0-4950-84ea-952143ee11a2?utm_source=askapollo_web&utm_medium=web_redirection">Dr. Aritra Konar</a><br>
+    </body>
+</html>
